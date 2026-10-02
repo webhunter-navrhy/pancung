@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Pan Čung Radí — finanční plánování, kalkulačky a konzultace</title>
+<meta name="description" content="Pan Čung vede lidi k finanční nezávislosti. 12 finančních kalkulaček, finanční plán na míru a 15minutová konzultace zdarma.">
+<meta name="theme-color" content="#0E1219">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%230E1219' stroke='%23D1A43C' stroke-width='1.5'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='serif' font-size='13' fill='%23D1A43C'%3EPČ%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/cung-kreslo.webp" type="image/webp">
+<link rel="stylesheet" href="style.css?v=7682b4a1">
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js" defer></script>
+<script src="main.js?v=8a296daa" defer></script>
+</head>
+<body>
+
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<!-- ═══════════ NAV ═══════════ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo" aria-label="Pan Čung Radí – úvod">
+      <span class="logo-mark">PČ</span>
+      <span class="logo-text">Pan Čung <em>Radí</em></span>
+    </a>
+    <button class="nav-toggle" aria-label="Otevřít menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <div class="nav-menu">
+      <a href="#o-mne" class="link-line">O mně</a>
+      <a href="#kalkulacka" class="link-line">Spočítejte si</a>
+      <a href="#nastroje" class="link-line">12 kalkulaček</a>
+      <a href="#jak-zacit" class="link-line">Jak začít</a>
+      <a href="https://pancungradi.simplybook.it/v2/#book" class="btn btn-gold btn-sm btn-magnetic" target="_blank" rel="noopener">Hovor zdarma</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow hero-fade"><span class="eyebrow-line"></span>Pan Čung Radí — finanční plánování</p>
+      <h1 class="hero-title">
+        <span class="w"><span>Vedu</span></span> <span class="w"><span>lidi</span></span> <span class="w"><span>k</span></span><br>
+        <span class="w"><span><em>finanční</em></span></span><br>
+        <span class="w"><span>nezávislosti.</span></span>
+      </h1>
+      <p class="hero-sub hero-fade">Investice, hypotéka, rozpočet i důchod. Spočítejte si to sami ve dvanácti kalkulačkách — nebo to spolu probereme na 15minutovém hovoru zdarma.</p>
+      <div class="hero-actions hero-fade">
+        <a href="https://pancungradi.simplybook.it/v2/#book" class="btn btn-gold btn-magnetic" target="_blank" rel="noopener">
+          Rezervovat hovor zdarma <span class="btn-arrow">→</span>
+        </a>
+        <a href="#jak-zacit" class="btn btn-ghost">Získat finanční plán</a>
+      </div>
+    </div>
+
+    <div class="hero-media">
+      <div class="hero-frame" aria-hidden="true"></div>
+      <div class="hero-img">
+        <picture>
+          <source srcset="img/cung-kreslo.webp" type="image/webp">
+          <img src="img/cung-kreslo.jpg" alt="Pan Čung v zeleném koženém křesle" class="hero-photo" width="1400" height="2100" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="hero-badge">
+        <span class="hero-badge-num">8</span>
+        <span class="hero-badge-txt">let pomáhám lidem<br>s jejich penězi</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <i></i>
+  </div>
+</section>
+
+<!-- ═══════════ MARQUEE ═══════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Investice <b>✦</b> Hypotéka <b>✦</b> Rozpočet 50/30/20 <b>✦</b> FIRE <b>✦</b> Rezerva <b>✦</b> Důchod <b>✦</b> Inflace <b>✦</b> Finanční plán na míru <b>✦</b>&nbsp;</span>
+    <span>Investice <b>✦</b> Hypotéka <b>✦</b> Rozpočet 50/30/20 <b>✦</b> FIRE <b>✦</b> Rezerva <b>✦</b> Důchod <b>✦</b> Inflace <b>✦</b> Finanční plán na míru <b>✦</b>&nbsp;</span>
+  </div>
+</div>
+
+<!-- ═══════════ O MNĚ ═══════════ -->
+<section class="about" id="o-mne">
+  <div class="container about-grid">
+    <figure class="about-media">
+      <div class="about-img clip-reveal">
+        <picture>
+          <source srcset="img/detail-ruce.webp" type="image/webp">
+          <img src="img/detail-ruce.jpg" alt="Detail – Pan Čung se zkříženýma rukama v koženém křesle" loading="lazy" class="parallax-img" width="1300" height="900">
+        </picture>
+      </div>
+      <figcaption>Pan Čung · finanční plány a konzultace</figcaption>
+    </figure>
+
+    <div class="about-copy">
+      <p class="eyebrow reveal"><span class="eyebrow-line"></span>O mně</p>
+      <h2 class="reveal">Finance, kterým<br><em>konečně rozumíte.</em></h2>
+      <p class="lead reveal">Jsem Pan Čung a už osm let pomáhám lidem dostat peníze pod kontrolu. Od měsíčního rozpočtu a rezervy přes hypotéku až po investice a důchod.</p>
+      <p class="reveal">Bez složitých pojmů a bez omáčky. Nejdřív si spolu ukážeme, kam vaše peníze mizí, a pak nastavíme strategii, která sedí přesně na vaše cíle.</p>
+
+      <div class="about-stats reveal-group">
+        <div class="astat reveal-item">
+          <span class="astat-num"><span data-count="500">0</span><sup>+</sup></span>
+          <span class="astat-lbl">spokojených klientů</span>
+        </div>
+        <div class="astat reveal-item">
+          <span class="astat-num"><span data-count="8">0</span><sup>let</sup></span>
+          <span class="astat-lbl">zkušeností</span>
+        </div>
+        <div class="astat reveal-item">
+          <span class="astat-num"><span data-count="4000" data-sep="1">0</span><sup>+</sup></span>
+          <span class="astat-lbl">lidí prošlo finančním kvízem</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ KALKULAČKA (signature) ═══════════ -->
+<section class="calc dark" id="kalkulacka">
+  <div class="calc-glow" aria-hidden="true"></div>
+  <div class="container">
+    <div class="calc-head">
+      <p class="eyebrow reveal"><span class="eyebrow-line"></span>Investiční kalkulačka</p>
+      <h2 class="reveal">Kolik z vás udělá<br><em>pravidelnost?</em></h2>
+    </div>
+
+    <div class="calc-grid">
+      <form class="calc-controls reveal" onsubmit="return false" aria-label="Parametry investice">
+        <div class="ctrl">
+          <div class="ctrl-top"><label for="c-once">Jednorázová investice</label><output id="o-once">30 000 Kč</output></div>
+          <input type="range" id="c-once" min="0" max="1000000" step="10000" value="30000">
+        </div>
+        <div class="ctrl">
+          <div class="ctrl-top"><label for="c-month">Měsíční investice</label><output id="o-month">3 000 Kč</output></div>
+          <input type="range" id="c-month" min="500" max="30000" step="500" value="3000">
+        </div>
+        <div class="ctrl">
+          <div class="ctrl-top"><label for="c-years">Délka investování</label><output id="o-years">20 let</output></div>
+          <input type="range" id="c-years" min="1" max="40" step="1" value="20">
+        </div>
+        <div class="ctrl">
+          <div class="ctrl-top"><label for="c-rate">Očekávaný roční výnos</label><output id="o-rate">7 %</output></div>
+          <input type="range" id="c-rate" min="1" max="12" step="0.5" value="7">
+        </div>
+        <p class="calc-note">Ilustrativní výpočet s měsíčním připisováním výnosu. Výnos není zaručený a hodnota investice může kolísat.</p>
+      </form>
+
+      <div class="calc-result reveal">
+        <p class="calc-label">Očekávaná hodnota na konci</p>
+        <p class="calc-big"><span id="r-total">0</span><span class="calc-cur">Kč</span></p>
+        <div class="calc-split">
+          <div><span class="dot dot-in"></span>Vloženo <strong id="r-in">0 Kč</strong></div>
+          <div><span class="dot dot-gain"></span>Zhodnocení <strong id="r-gain">0 Kč</strong></div>
+        </div>
+        <svg class="calc-chart" viewBox="0 0 600 240" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="gGold" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#D1A43C" stop-opacity=".38"/>
+              <stop offset="100%" stop-color="#D1A43C" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <g class="chart-grid">
+            <line x1="0" y1="60" x2="600" y2="60"/><line x1="0" y1="120" x2="600" y2="120"/><line x1="0" y1="180" x2="600" y2="180"/>
+          </g>
+          <path id="ch-area" fill="url(#gGold)" d=""/>
+          <path id="ch-in" class="ch-in" d=""/>
+          <path id="ch-total" class="ch-total" d=""/>
+        </svg>
+        <div class="chart-axis"><span>dnes</span><span id="ax-end">za 20 let</span></div>
+      </div>
+    </div>
+
+    <blockquote class="calc-tip reveal">
+      <p>„Čím dříve začnete investovat, tím více pro vás pracuje složené úročení.“</p>
+      <cite>Tip od Pana Čunga</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ═══════════ 12 KALKULAČEK ═══════════ -->
+<section class="tools" id="nastroje">
+  <div class="container">
+    <div class="tools-head">
+      <div>
+        <p class="eyebrow reveal"><span class="eyebrow-line"></span>Finanční nástroje</p>
+        <h2 class="reveal"><span class="stroke-num">12</span> kalkulaček.<br><em>Spočítejte si to sami.</em></h2>
+      </div>
+      <p class="tools-intro reveal">Než se rozhodnete o hypotéce, investici nebo splacení dluhu, podívejte se na čísla. Každá kalkulačka odpoví na jednu konkrétní otázku.</p>
+    </div>
+
+    <div class="tools-list reveal-group">
+      <a class="tool reveal-item" href="https://pancung.cz/#investice"><span class="tool-n">01</span><span class="tool-t">Investiční kalkulačka<small>Jaká bude budoucí hodnota investic?</small></span><span class="tool-a">↗</span></a>
+      <a class="tool reveal-item" href="https://pancung.cz/#hypoteka"><span class="tool-n">02</span><span class="tool-t">Hypoteční kalkulačka<small>Kolik budu měsíčně splácet?</small></span><span class="tool-a">↗</span></a>
+      <a class="tool reveal-item" href="https://pancung.cz/#uver"><span class="tool-n">03</span><span class="tool-t">Splátková kalkulačka<small>Splátky spotřebitelského úvěru</small></span><span class="tool-a">↗</span></a>
+      <a class="tool reveal-item" href="https://pancung.cz/#budget"><span class="tool-n">04</span><span class="tool-t">Pravidlo 50/30/20<small>Optimální rozdělení rozpočtu</small></span><span class="tool-a">↗</span></a>
+      <a class="tool reveal-item" href="https://pancung.cz/"><span class="tool-n">05</span><span class="tool-t">Spořicí kalkulačka<small>Kdy dosáhnu svého cíle?</small></span><span class="tool-a">↗</span></a>
+      <a class="tool reveal-item" href="https://pancung.cz/"><span class="tool-n">06</span><span class="tool-t">FIRE kalkulačka<small>Kdy budu finančně nezávislý?</small></span><span class="tool-a">↗</span></a>
+      <a class="tool reveal-item" href="https://pancung.cz/"><span class="tool-n">07</span><span class="tool-t">Doplacení dluhů<small>Snowball metoda – rychleji bez dluhů</small></span><span class="tool-a">↗</span></a>
+      <a class="tool reveal-item" href="https://pancung.cz/"><span class="tool-n">08</span><span class="tool-t">Čistá mzda<small>Kolik mi zbyde z hrubé mzdy?</small></span><span class="tool-a">↗</span></a>
+      <a class="tool reveal-item" href="https://pancung.cz/#pojisteni"><span class="tool-n">09</span><span class="tool-t">Pojistná kalkulačka<small>Doporučené krytí pro mou situaci</small></span><span class="tool-a">↗</span></a>
+      <a class="tool reveal-item" href="https://pancung.cz/#prijmy-vydaje"><span class="tool-n">10</span><span class="tool-t">Příjmy a výdaje<small>Můj měsíční cashflow</small></span><span class="tool-a">↗</span></a>
+      <a class="tool reveal-item" href="https://pancung.cz/#duchod"><span class="tool-n">11</span><span class="tool-t">Důchodová kalkulačka<small>Plán na odchod do důchodu</small></span><span class="tool-a">↗</span></a>
+      <a class="tool reveal-item" href="https://pancung.cz/#inflace"><span class="tool-n">12</span><span class="tool-t">Inflační kalkulačka<small>Co inflace udělá s úsporami?</small></span><span class="tool-a">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ QUOTE BREAK ═══════════ -->
+<section class="quote-break dark">
+  <div class="qb-bg">
+    <picture>
+      <source srcset="img/panel.webp" type="image/webp">
+      <img src="img/panel.jpg" alt="" loading="lazy" class="parallax-img" width="1280" height="410">
+    </picture>
+  </div>
+  <div class="container qb-inner">
+    <span class="qb-mark" aria-hidden="true">“</span>
+    <p class="qb-text reveal">Pravidelnost je klíčem k&nbsp;úspěchu. I&nbsp;malá částka měsíčně může za 20&nbsp;let vytvořit <em>velké bohatství.</em></p>
+    <p class="qb-cite reveal">— Pan Čung</p>
+  </div>
+</section>
+
+<!-- ═══════════ JAK ZAČÍT (sticky) ═══════════ -->
+<section class="start" id="jak-zacit">
+  <div class="container">
+    <div class="start-head">
+      <p class="eyebrow reveal"><span class="eyebrow-line"></span>Jak začít</p>
+      <h2 class="reveal">Tři cesty.<br><em>Vyberte si tu svou.</em></h2>
+    </div>
+
+    <div class="start-grid">
+      <div class="start-media" aria-hidden="true">
+        <div class="start-frame">
+          <img src="img/kviz.webp" alt="" class="sm is-active" data-step="0" loading="lazy">
+          <img src="img/plan.webp" alt="" class="sm" data-step="1" loading="lazy">
+          <img src="img/cung-detail.webp" alt="" class="sm" data-step="2" loading="lazy">
+          <span class="start-counter"><b id="st-num">01</b> / 03</span>
+        </div>
+      </div>
+
+      <div class="start-steps">
+        <article class="step" data-step="0">
+          <span class="step-n">01</span>
+          <h3>Finanční kvíz</h3>
+          <p class="step-lead">Nevíte, kde začít? Deset otázek a dvě minuty.</p>
+          <p>Zjistíte, v jaké kondici jsou vaše finance, proč vám na konci měsíce skoro nic nezbývá a co změnit jako první. Dostanete doporučení na míru.</p>
+          <p class="step-proof">Kvíz už pomohl 4 000+ lidem</p>
+          <a href="https://kviz.pancung.cz/" class="btn btn-dark btn-magnetic" target="_blank" rel="noopener">Spustit finanční kvíz <span class="btn-arrow">→</span></a>
+        </article>
+
+        <article class="step" data-step="1">
+          <span class="step-n">02</span>
+          <h3>Finanční plán na míru</h3>
+          <p class="step-lead">Vyplníte krátký dotazník, já připravím plán.</p>
+          <p>Plán přizpůsobený vaší situaci a vašim cílům. Zdarma a bez závazků.</p>
+          <ul class="step-list">
+            <li>Analýza financí</li>
+            <li>Investiční strategie</li>
+            <li>Doporučení na míru</li>
+          </ul>
+          <a href="https://form.typeform.com/to/bA4J1ZKX?typeform-source=pancung.cz" class="btn btn-dark btn-magnetic" target="_blank" rel="noopener">Chci finanční plán <span class="btn-arrow">→</span></a>
+        </article>
+
+        <article class="step" data-step="2">
+          <span class="step-n">03</span>
+          <h3>Osobní konzultace</h3>
+          <p class="step-lead">15 minut zdarma, jen vy a vaše čísla.</p>
+          <p>Probereme vaši finanční situaci a pomůžu vám nastavit správnou strategii pro vaše cíle. Termín si vyberete sami v kalendáři.</p>
+          <a href="https://pancungradi.simplybook.it/v2/#book" class="btn btn-dark btn-magnetic" target="_blank" rel="noopener">Rezervovat hovor zdarma <span class="btn-arrow">→</span></a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CTA + KOMUNITA ═══════════ -->
+<section class="cta green" id="kontakt">
+  <div class="cta-deco" aria-hidden="true">Radí</div>
+  <div class="container cta-grid">
+    <div class="cta-copy">
+      <p class="eyebrow reveal"><span class="eyebrow-line"></span>Potřebujete osobní konzultaci?</p>
+      <h2 class="cta-title reveal">Probereme to<br><em>osobně.</em></h2>
+      <p class="cta-sub reveal">Rezervujte si bezplatný 15minutový hovor. Podíváme se na vaši situaci a nastavíme strategii, která dává smysl právě vám.</p>
+      <div class="cta-actions reveal">
+        <a href="https://pancungradi.simplybook.it/v2/#book" class="btn btn-gold btn-lg btn-magnetic" target="_blank" rel="noopener">Zarezervovat hovor zdarma <span class="btn-arrow">→</span></a>
+        <a href="https://form.typeform.com/to/bA4J1ZKX?typeform-source=pancung.cz" class="btn btn-ghost" target="_blank" rel="noopener">Získat finanční plán</a>
+      </div>
+      <a href="mailto:ahoj@nguyenductrung.cz" class="cta-mail link-line reveal">ahoj@nguyenductrung.cz</a>
+    </div>
+
+    <div class="cta-side">
+      <div class="cta-img clip-reveal">
+        <picture>
+          <source srcset="img/cung-portret.webp" type="image/webp">
+          <img src="img/cung-portret.jpg" alt="Pan Čung" loading="lazy" class="parallax-img" width="1100" height="1650">
+        </picture>
+      </div>
+      <a href="https://discord.gg/bCdRj6hYtR" class="discord reveal" target="_blank" rel="noopener">
+        <span class="discord-lbl">Komunita</span>
+        <span class="discord-t">Přidejte se na Discord</span>
+        <span class="discord-s">Sdílejte otázky a zkušenosti s lidmi, kteří řeší to samé co vy.</span>
+        <span class="discord-a">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-big" aria-hidden="true">Pan Čung <em>Radí</em></div>
+    <div class="footer-grid">
+      <div>
+        <p class="f-lbl">Kontakt</p>
+        <a href="mailto:ahoj@nguyenductrung.cz" class="link-line">ahoj@nguyenductrung.cz</a>
+      </div>
+      <div>
+        <p class="f-lbl">Odkazy</p>
+        <a href="https://kviz.pancung.cz/" class="link-line" target="_blank" rel="noopener">Finanční kvíz</a>
+        <a href="https://form.typeform.com/to/bA4J1ZKX?typeform-source=pancung.cz" class="link-line" target="_blank" rel="noopener">Finanční plán</a>
+        <a href="https://pancungradi.simplybook.it/v2/#book" class="link-line" target="_blank" rel="noopener">Konzultace zdarma</a>
+      </div>
+      <div>
+        <p class="f-lbl">Komunita</p>
+        <a href="https://discord.gg/bCdRj6hYtR" class="link-line" target="_blank" rel="noopener">Discord</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Pan Čung Radí. Všechna práva vyhrazena.</span>
+      <span>Výpočty v kalkulačkách jsou orientační a nejsou investičním doporučením.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://pancungradi.simplybook.it/v2/#book" class="fab" target="_blank" rel="noopener" aria-label="Rezervovat hovor zdarma">Hovor zdarma</a>
+
+</body>
+</html>
